@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Example Developer Documentation Site",
+    title: "DevDoc",
     description: "Use this site to communicate the details of your API",
     author: "@garoyeri",
   },
