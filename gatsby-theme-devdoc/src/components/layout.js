@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import { MDXProvider } from "@mdx-js/react"
+
+import SwaggerUI from "swagger-ui-react"
 
 import Header from './header'
 import './layout.css'
+
+const shortcodes = { SwaggerUI }
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,7 +32,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          {children}
+          <MDXProvider components={shortcodes}>{children}</MDXProvider>
         </div>
       </>
     )}
