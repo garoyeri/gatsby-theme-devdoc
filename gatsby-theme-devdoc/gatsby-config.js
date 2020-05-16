@@ -5,6 +5,7 @@ module.exports = {
     `gatsby-remark-images`,
     `gatsby-remark-prismjs`,
     `gatsby-remark-external-links`,
+    `gatsby-remark-mermaid`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -27,6 +28,7 @@ module.exports = {
               quality: 95,
             },
           },
+          `gatsby-remark-mermaid`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
