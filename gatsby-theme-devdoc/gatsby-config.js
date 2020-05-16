@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   plugins: [
     `gatsby-plugin-theme-ui`,
-    `gatsby-theme-style-guide`,
+    // `gatsby-theme-style-guide`,
     `gatsby-remark-images`,
     `gatsby-remark-prismjs`,
     `gatsby-remark-external-links`,
@@ -102,11 +102,5 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: path.join(__dirname, `src/pages`),
-      },
-    },
   ],
 };
