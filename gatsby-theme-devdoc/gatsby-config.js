@@ -4,6 +4,7 @@ module.exports = {
   plugins: [
     `gatsby-remark-images`,
     `gatsby-remark-prismjs`,
+    `gatsby-remark-external-links`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -12,6 +13,13 @@ module.exports = {
           default: require.resolve("./src/components/layout.js"),
         },
         gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: "_self",
+              rel: "nofollow",
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
