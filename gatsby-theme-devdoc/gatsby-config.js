@@ -2,6 +2,8 @@ const path = require("path");
 
 module.exports = {
   plugins: [
+    `gatsby-plugin-theme-ui`,
+    `gatsby-theme-style-guide`,
     `gatsby-remark-images`,
     `gatsby-remark-prismjs`,
     `gatsby-remark-external-links`,
