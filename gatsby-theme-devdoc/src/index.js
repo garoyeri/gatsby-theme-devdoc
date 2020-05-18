@@ -6,6 +6,6 @@ export const wrapPageElement = ({ element, props }) => (
   <Layout {...props} children={element} />
 )
 
-export { Header } from "./components/header"
-export { SEO } from "./components/seo"
-export { Layout } from "./components/layout"
+export { default as Header } from "./components/header"
+export { default as SEO } from "./components/seo"
+export { default as Layout } from "./components/layout"
