@@ -124,7 +124,7 @@ File: `src/pages/diagrams.mdx`
 title: Open API
 ---
 
-```mermaid
+​```mermaid
 graph RL
  subgraph Workspace: Pulse CX Insights
  A(Report:<br />Pulse CX Insights) --> B((Dataset:<br />Pulse CX Insights))
