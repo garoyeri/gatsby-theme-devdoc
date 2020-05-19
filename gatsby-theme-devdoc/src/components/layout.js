@@ -2,7 +2,7 @@
 import { jsx, Styled } from 'theme-ui'
 import { useState, useRef } from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { AccordionNav } from '@theme-ui/sidenav'
 import { Flex, Box } from '@theme-ui/components'
@@ -12,6 +12,7 @@ import MenuButton from './menu-button'
 import NavLink from './nav-link'
 import Pagination from './pagination'
 import SEO from './seo'
+import HeaderContent from './header-content'
 
 import Sidebar from '../sidebar.mdx'
 const sidebar = {
@@ -38,7 +39,7 @@ const Layout = (props) => {
       `}
       render={(data) => (
         <Styled.root>
-          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+          <SEO title={props.pageContext.frontmatter.title} />
           <Flex
             sx={{
               flexDirection: 'column',
@@ -52,6 +53,8 @@ const Layout = (props) => {
                 px: 3,
                 alignItems: 'center',
                 justifyContent: 'space-between',
+                backgroundColor: 'primary',
+                color: 'background'
               }}
             >
               <Flex sx={{ alignItems: 'center' }}>
@@ -63,9 +66,7 @@ const Layout = (props) => {
                     if (navLink) navLink.focus()
                   }}
                 />
-                <Link to="/" sx={{ variant: 'links.nav' }}>
-                  {data.site.siteMetadata.title}
-                </Link>
+                <HeaderContent siteTitle={data.site.siteMetadata.title} />
               </Flex>
             </Flex>
             <Box
