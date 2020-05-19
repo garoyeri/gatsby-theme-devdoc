@@ -942,10 +942,15 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@braintree/sanitize-url@^3.0.0", "@braintree/sanitize-url@^3.1.0":
+"@braintree/sanitize-url@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-3.1.0.tgz#8ff71d51053cd5ee4981e5a501d80a536244f7fd"
   integrity sha512-GcIY79elgB+azP74j8vqkiXz8xLFfIzbQJdlwOPisgbKT00tviJQuEghOXSMVxJ00HoYJbGswr4kcllUc4xCcg==
+
+"@braintree/sanitize-url@^4.0.0":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-4.0.1.tgz#16e719eba72693f95989c05f2b3b424f2aabc5b0"
+  integrity sha512-THIQtVN491hY2rTZ/h5boj0CwDKrZQIUnfaj6RbpGwRJKfmEIgNpgcCJC3KZl1Vux9bQmdE2P4Q7cYUoSUQ4MA==
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
@@ -4230,7 +4235,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.1:
+create-react-class@^15.5.1, create-react-class@^15.6.0:
   version "15.6.3"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha512-M+/3Q6E6DLO6Yx3OwrWjwHBnvfXXYA7W+dFjt/ZDBemHO1DDZhsalX/NUtnTYclN6GfnBDRh4qRHjcDHmlJBJg==
@@ -12311,6 +12316,16 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
+react-dom@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
+  integrity sha1-Qc+t9pO3V/rycIRDodH9WgK+9zA=
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
+
 react-dom@^16.12.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
@@ -12426,6 +12441,17 @@ react-side-effect@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.0.tgz#1ce4a8b4445168c487ed24dab886421f74d380d3"
   integrity sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
+
+react@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
+  integrity sha1-26BDSrQ5z+gvEI8PURZjkIF5qnI=
+  dependencies:
+    create-react-class "^15.6.0"
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
 
 react@^16.12.0, react@^16.8.0, react@^16.8.6:
   version "16.13.1"
@@ -12937,10 +12963,10 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-reselect@^2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/reselect/-/reselect-2.5.4.tgz#b7d23fdf00b83fa7ad0279546f8dbbbd765c7047"
-  integrity sha1-t9I/3wC4P6etAnlUb427vXZccEc=
+reselect@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+  integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -14314,7 +14340,7 @@ svgo@1.3.2, svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swagger-client@^3.10.0:
+swagger-client@^3.10.3:
   version "3.10.3"
   resolved "https://registry.yarnpkg.com/swagger-client/-/swagger-client-3.10.3.tgz#0735762a8940506c742502b01423f18b74b90c64"
   integrity sha512-mv/mVh+DEAh5o2qykTB7SK7a/ViuwWaKozHHzqOZpxkHJq4UIpiTA6jQpk+mYjdwYPISGwOVt/bd7J8OTleMjQ==
@@ -14338,13 +14364,13 @@ swagger-client@^3.10.0:
     utf8-bytes "0.0.1"
     utfstring "^2.0.0"
 
-swagger-ui-react@3.25.0:
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/swagger-ui-react/-/swagger-ui-react-3.25.0.tgz#44b9ad59b3d98e680dc36d2e2117518c3e8d3af6"
-  integrity sha512-2MMk3p42Q3x/E91vIqitvXJLAvDsBwxW8DLt3FfI0H6YPnWGqafsU4kP6unVriQqJqafcQII5suDwmycdmqSdw==
+swagger-ui@^3.25.3:
+  version "3.25.3"
+  resolved "https://registry.yarnpkg.com/swagger-ui/-/swagger-ui-3.25.3.tgz#8df2f1faf470ca88316ea596297ede622aa7c29f"
+  integrity sha512-FLlPg8LVq15qZfzVbpEDWqc4iGRAr21vJTK1d82oYrvQ7DtiAEMiEgc7JlEpH5DUoxx+h804QpfH9+ABy5mpkw==
   dependencies:
     "@babel/runtime-corejs2" "^7.5.5"
-    "@braintree/sanitize-url" "^3.0.0"
+    "@braintree/sanitize-url" "^4.0.0"
     "@kyleshockey/object-assign-deep" "^0.4.2"
     "@kyleshockey/xml" "^1.0.2"
     base64-js "^1.2.0"
@@ -14361,7 +14387,9 @@ swagger-ui-react@3.25.0:
     memoizee "^0.4.12"
     prop-types "^15.7.2"
     randombytes "^2.1.0"
+    react "^15.6.2"
     react-debounce-input "^3.2.0"
+    react-dom "^15.6.2"
     react-immutable-proptypes "2.1.0"
     react-immutable-pure-component "^1.1.1"
     react-inspector "^2.3.0"
@@ -14370,10 +14398,10 @@ swagger-ui-react@3.25.0:
     redux "^3.x.x"
     redux-immutable "3.1.0"
     remarkable "^1.7.4"
-    reselect "^2.5.4"
+    reselect "^4.0.0"
     serialize-error "^2.1.0"
     sha.js "^2.4.11"
-    swagger-client "^3.10.0"
+    swagger-client "^3.10.3"
     url-parse "^1.4.7"
     xml-but-prettier "^1.0.1"
     zenscroll "^4.0.2"

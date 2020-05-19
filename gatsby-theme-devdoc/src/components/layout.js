@@ -6,13 +6,13 @@ import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { AccordionNav } from '@theme-ui/sidenav'
 import { Flex, Box } from '@theme-ui/components'
-import SwaggerUI from 'swagger-ui-react'
 
 import MenuButton from './menu-button'
 import NavLink from './nav-link'
 import Pagination from './pagination'
 import SEO from './seo'
 import HeaderContent from './header-content'
+import SwaggerUI from './swagger-ui'
 
 import Sidebar from '../sidebar.mdx'
 const sidebar = {
@@ -39,7 +39,7 @@ const Layout = (props) => {
       `}
       render={(data) => (
         <Styled.root>
-          <SEO title={props.pageContext.frontmatter.title} />
+          <SEO title={props.pageContext?.frontmatter?.title || ''} />
           <Flex
             sx={{
               flexDirection: 'column',
@@ -94,7 +94,7 @@ const Layout = (props) => {
                   <Sidebar
                     open={menuOpen}
                     components={sidebar}
-                    pathname={props.location.pathname}
+                    pathname={props.location?.pathname}
                     sx={{
                       display: [null, 'block'],
                       width: 256,
