@@ -26,12 +26,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "gatsby-default-mdx-basic",
-        short_name: "starter",
+        name: "gatsby-theme-devdoc-example",
+        short_name: "DevDoc Example",
         start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
+        background_color: "#07C",
+        theme_color: "#07C",
+        display: "browser",
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },

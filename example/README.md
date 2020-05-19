@@ -1,6 +1,3 @@
-# Gatsby Theme Minimal Example
+# Gatsby DevDoc Theme Example
 
-A usage of
-[gatsby-theme-minimal](https://github.com/ChristopherBiscardi/gatsby-theme-minimal)
-that does nothing but use the theme. As a result you will see `Error: Missing resources for /` when navigating to `http://localhost:8000`. To get
-rid of that, create a page in `src/pages/index.js`.
+An example usage of [gatsby-theme-devdoc](https://github.com/garoyeri/gatsby-theme-devdoc) with a few example pages to demonstrate the included components.
