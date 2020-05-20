@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Garo Yeriazarian <garo.yeriazarian@gmail.com> (@garoyeri)",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme"
+  ],
   "scripts": {
     "format": "prettier --write \"src/**/*.js\""
   },

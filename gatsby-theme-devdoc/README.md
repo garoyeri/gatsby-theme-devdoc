@@ -1,5 +1,7 @@
 # Gatsby Developer Documentation Theme
 
+This Gatsby Theme is for building up easy to contribute to developer documentation and runbooks for your softwre projects. It has a bunch of useful plugins already hacked together to work and let's you quickly get moving with a simple looking theme. This is still pretty fresh, and there are many opportunities for us to work together to make it even better.
+
 ## Quick Start
 
 ```shell
